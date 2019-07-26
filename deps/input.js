@@ -1,4 +1,5 @@
 var keys = [];
+var lastKeyCode = null;
 var BACKSPACE = 8;
 var TAB = 9;
 var ENTER = 13;
@@ -53,6 +54,7 @@ var keyZ = 90;
 
 function keyPressed() {
 	keys[keyCode] = true;
+	lastKeyCode = keyCode;
 }
 
 function keyReleased() {
