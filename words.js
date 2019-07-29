@@ -23,8 +23,8 @@ class Word {
     }
 
     matches(toMatch) {
-        let noFormatWord = this.word.split("-").join("");
-        noFormatWord = noFormatWord.split("'").join("");
-        return noFormatWord.toUpperCase() == toMatch.toUpperCase();
+        let noFormatWord = this.word.split("-").join(""); // remove dashes
+        noFormatWord = noFormatWord.split("'").join(""); // remove apostrophes
+        return noFormatWord.toUpperCase() == toMatch.toUpperCase(); // compare as uppercase
     }
 }
